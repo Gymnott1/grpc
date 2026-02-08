@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service SpeedTest {
+  // A simple RPC
+  rpc SideTrip (PingRequest) returns (PongResponse);
+}
+
+message PingRequest {
+  string data = 1;
+}
+
+message PongResponse {
+  string message = 1;
+}
